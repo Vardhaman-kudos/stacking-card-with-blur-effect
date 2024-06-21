@@ -51,8 +51,17 @@
 
 .scrolling-tiles .tiles-listing .item-tiles .tiles-heading {
     font-size: 60px;
+    margin: 0;
 }
 
 .scrolling-tiles .tiles-listing .item-tiles .tiles-heading, .scrolling-tiles .tiles-listing .item-tiles p {
     color: #FFF;
+}
+
+
+
+@media (max-width: 767px) {
+    .scrolling-tiles .tiles-listing .item-tiles .media-content {
+        padding: 20px;
+    }
 }
