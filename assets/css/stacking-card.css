@@ -1,0 +1,58 @@
+:root {
+    --space-unit: 1em;
+    --space-sm: calc(.75 * var(--space-unit));
+    --space-md: calc(1.25 * var(--space-unit) + 130px);
+    --space-md-screen-sm: calc(1.25 * var(--space-unit) + 90px)
+}
+
+.tiles-listing {
+    --stack-cards-gap: var(--space-sm)
+}
+
+.scrolling-tiles .tiles-listing .item-tiles {
+    -webkit-transform-origin: center top;
+    border-radius: 16px;
+    display: block;
+    height: 640px;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--space-md);
+    transform-origin: center top
+}
+
+.scrolling-tiles .tiles-listing .item-tiles .media-source {
+    height: 100%;
+    position: relative
+}
+
+.scrolling-tiles .tiles-listing .item-tiles .media-source img, .scrolling-tiles .tiles-listing .item-tiles .media-source video {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%
+}
+
+.scrolling-tiles .tiles-listing .item-tiles .media-content {
+    bottom: 0;
+    left: 0;
+    max-width: 590px;
+    padding: 80px;
+    position: absolute;
+    width: 100%;
+    z-index: 3
+}
+
+.scrolling-tiles .tiles-listing .item-tiles:nth-child(2n) .media-content {
+    left: auto;
+    right: 0;
+    width: 100%
+}
+
+.scrolling-tiles .tiles-listing .item-tiles .tiles-heading {
+    font-size: 60px;
+}
+
+.scrolling-tiles .tiles-listing .item-tiles .tiles-heading, .scrolling-tiles .tiles-listing .item-tiles p {
+    color: #FFF;
+}
